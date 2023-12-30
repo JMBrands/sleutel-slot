@@ -1,0 +1,26 @@
+#	Created by:	Discovery Studio
+#	Creation time:	Wed Sep 05 09:54:16 W. Europe Daylight Time 2007
+
+@<TRIPOS>MOLECULE
+PERTBL
+    3     2     1 0 0
+SMALL
+USER_CHARGES
+
+
+@<TRIPOS>ATOM
+      1 O1            1.0000    1.0000    1.0000 O.3      1 SUBUNIT   -0.4114
+      2 H2            2.0000    1.0000    1.0000 H        1 SUBUNIT    0.2057
+      3 H3            0.6662    1.9426    1.0000 H        1 SUBUNIT    0.2057
+@<TRIPOS>BOND
+     1    1    2 1
+     2    1    3 1
+@<TRIPOS>SUBSTRUCTURE
+1 SUBUNIT 1 PERM 0 **** ****
+@<SCITEGIC>ATOM_PROPERTY
+Formal Charge
+SciTegic.value.StringValue
+1 0
+2 0
+3 0
+

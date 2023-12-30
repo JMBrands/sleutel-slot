@@ -1,0 +1,238 @@
+Tue Oct 30 08:16:18 2007 (172) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:18 2007 (172) GET /water.mol2 HTTP/1.1
+Tue Oct 30 08:16:18 2007 (172) 200 OK
+Tue Oct 30 08:16:18 2007 (172) Total 798 bytes sent.
+Tue Oct 30 08:16:18 2007 (172) Connection closed.
+Tue Oct 30 08:16:22 2007 (173) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:22 2007 (173) GET /index.html HTTP/1.1
+Tue Oct 30 08:16:22 2007 (173) 200 OK
+Tue Oct 30 08:16:22 2007 (173) Reusing connection...
+Tue Oct 30 08:16:29 2007 (174) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:29 2007 (174) GET /water.mol2 HTTP/1.1
+Tue Oct 30 08:16:29 2007 (174) 200 OK
+Tue Oct 30 08:16:29 2007 (174) Total 798 bytes sent.
+Tue Oct 30 08:16:29 2007 (174) Connection closed.
+Tue Oct 30 08:16:37 2007 (175) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:37 2007 (175) GET /Jmol.js HTTP/1.1
+Tue Oct 30 08:16:37 2007 (175) 200 OK
+Tue Oct 30 08:16:37 2007 (175) Reusing connection...
+Tue Oct 30 08:16:37 2007 (173) GET /index.css HTTP/1.1
+Tue Oct 30 08:16:37 2007 (173) 200 OK
+Tue Oct 30 08:16:37 2007 (173) Reusing connection...
+Tue Oct 30 08:16:38 2007 (175) GET /index.js HTTP/1.1
+Tue Oct 30 08:16:38 2007 (175) 200 OK
+Tue Oct 30 08:16:38 2007 (175) Reusing connection...
+Tue Oct 30 08:16:38 2007 (173) GET /questions.js HTTP/1.1
+Tue Oct 30 08:16:38 2007 (173) 200 OK
+Tue Oct 30 08:16:38 2007 (173) Reusing connection...
+Tue Oct 30 08:16:38 2007 (173) GET /logo.jpg HTTP/1.1
+Tue Oct 30 08:16:38 2007 (173) 200 OK
+Tue Oct 30 08:16:38 2007 (173) Reusing connection...
+Tue Oct 30 08:16:38 2007 (175) GET /bg.gif HTTP/1.1
+Tue Oct 30 08:16:38 2007 (175) 200 OK
+Tue Oct 30 08:16:38 2007 (175) Reusing connection...
+Tue Oct 30 08:16:38 2007 (173) GET /arrow_0.gif HTTP/1.1
+Tue Oct 30 08:16:38 2007 (173) 200 OK
+Tue Oct 30 08:16:38 2007 (173) Reusing connection...
+Tue Oct 30 08:16:38 2007 (173) GET /close.gif HTTP/1.1
+Tue Oct 30 08:16:38 2007 (173) 200 OK
+Tue Oct 30 08:16:38 2007 (173) Reusing connection...
+Tue Oct 30 08:16:38 2007 (175) GET /restart.gif HTTP/1.1
+Tue Oct 30 08:16:38 2007 (175) 200 OK
+Tue Oct 30 08:16:38 2007 (175) Reusing connection...
+Tue Oct 30 08:16:38 2007 (176) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:38 2007 (173) GET /help.gif HTTP/1.1
+Tue Oct 30 08:16:38 2007 (173) 200 OK
+Tue Oct 30 08:16:38 2007 (173) Reusing connection...
+Tue Oct 30 08:16:38 2007 (175) GET /show.gif HTTP/1.1
+Tue Oct 30 08:16:38 2007 (175) 200 OK
+Tue Oct 30 08:16:38 2007 (175) Reusing connection...
+Tue Oct 30 08:16:38 2007 (176) GET /JmolApplet0.jar HTTP/1.1
+Tue Oct 30 08:16:38 2007 (176) 200 OK
+Tue Oct 30 08:16:38 2007 (176) Total 11327 bytes sent.
+Tue Oct 30 08:16:38 2007 (176) Connection closed.
+Tue Oct 30 08:16:38 2007 (177) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:39 2007 (173) GET /next.gif HTTP/1.1
+Tue Oct 30 08:16:39 2007 (173) 200 OK
+Tue Oct 30 08:16:39 2007 (173) Reusing connection...
+Tue Oct 30 08:16:39 2007 (175) GET /choose.gif HTTP/1.1
+Tue Oct 30 08:16:39 2007 (175) 200 OK
+Tue Oct 30 08:16:39 2007 (175) Reusing connection...
+Tue Oct 30 08:16:39 2007 (177) GET /JmolApplet0.jar HTTP/1.1
+Tue Oct 30 08:16:39 2007 (177) 200 OK
+Tue Oct 30 08:16:39 2007 (177) Total 11327 bytes sent.
+Tue Oct 30 08:16:39 2007 (177) Connection closed.
+Tue Oct 30 08:16:39 2007 (178) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:39 2007 (173) GET /bottom.gif HTTP/1.1
+Tue Oct 30 08:16:39 2007 (173) 200 OK
+Tue Oct 30 08:16:39 2007 (173) Reusing connection...
+Tue Oct 30 08:16:39 2007 (178) GET /JmolApplet0_Main.jar HTTP/1.1
+Tue Oct 30 08:16:39 2007 (178) 200 OK
+Tue Oct 30 08:16:39 2007 (178) Total 33187 bytes sent.
+Tue Oct 30 08:16:39 2007 (178) Connection closed.
+Tue Oct 30 08:16:39 2007 (179) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:39 2007 (179) GET /JmolApplet0_Main.jar HTTP/1.1
+Tue Oct 30 08:16:39 2007 (179) 200 OK
+Tue Oct 30 08:16:39 2007 (179) Total 33187 bytes sent.
+Tue Oct 30 08:16:39 2007 (179) Connection closed.
+Tue Oct 30 08:16:39 2007 (180) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:39 2007 (180) GET /JmolApplet0_Core.jar HTTP/1.1
+Tue Oct 30 08:16:39 2007 (180) 200 OK
+Tue Oct 30 08:16:39 2007 (181) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:39 2007 (181) GET /JmolApplet0_Core.jar HTTP/1.1
+Tue Oct 30 08:16:39 2007 (181) 200 OK
+Tue Oct 30 08:16:39 2007 (181) Total 147227 bytes sent.
+Tue Oct 30 08:16:39 2007 (181) Connection closed.
+Tue Oct 30 08:16:39 2007 (182) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:39 2007 (182) GET /JmolApplet0_Jars.jar HTTP/1.1
+Tue Oct 30 08:16:39 2007 (182) 200 OK
+Tue Oct 30 08:16:39 2007 (182) Total 56194 bytes sent.
+Tue Oct 30 08:16:39 2007 (182) Connection closed.
+Tue Oct 30 08:16:39 2007 (183) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:39 2007 (183) GET /JmolApplet0_Jars.jar HTTP/1.1
+Tue Oct 30 08:16:39 2007 (183) 200 OK
+Tue Oct 30 08:16:39 2007 (183) Total 56194 bytes sent.
+Tue Oct 30 08:16:39 2007 (183) Connection closed.
+Tue Oct 30 08:16:43 2007 (184) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (184) GET /JmolApplet0.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (184) 200 OK
+Tue Oct 30 08:16:43 2007 (184) Total 11327 bytes sent.
+Tue Oct 30 08:16:43 2007 (184) Connection closed.
+Tue Oct 30 08:16:43 2007 (185) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (185) GET /JmolApplet0_Popup.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (185) 200 OK
+Tue Oct 30 08:16:43 2007 (185) Total 29508 bytes sent.
+Tue Oct 30 08:16:43 2007 (185) Connection closed.
+Tue Oct 30 08:16:43 2007 (186) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (186) GET /JmolApplet0_Popup.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (186) 200 OK
+Tue Oct 30 08:16:43 2007 (186) Total 29508 bytes sent.
+Tue Oct 30 08:16:43 2007 (186) Connection closed.
+Tue Oct 30 08:16:43 2007 (187) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (187) GET /JmolApplet0_i18n.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (187) 200 OK
+Tue Oct 30 08:16:43 2007 (187) Total 133164 bytes sent.
+Tue Oct 30 08:16:43 2007 (187) Connection closed.
+Tue Oct 30 08:16:43 2007 (188) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (188) GET /JmolApplet0_i18n.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (188) 200 OK
+Tue Oct 30 08:16:43 2007 (188) Total 133164 bytes sent.
+Tue Oct 30 08:16:43 2007 (188) Connection closed.
+Tue Oct 30 08:16:43 2007 (189) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (189) GET /JmolApplet0_Viewer.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (189) 200 OK
+Tue Oct 30 08:16:43 2007 (190) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (190) GET /JmolApplet0_Viewer.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (190) 200 OK
+Tue Oct 30 08:16:43 2007 (189) Total 135375 bytes sent.
+Tue Oct 30 08:16:43 2007 (189) Connection closed.
+Tue Oct 30 08:16:43 2007 (190) Total 367157 bytes sent.
+Tue Oct 30 08:16:43 2007 (190) Connection closed.
+Tue Oct 30 08:16:43 2007 (191) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:43 2007 (191) GET /JmolApplet0_Viewer.jar HTTP/1.1
+Tue Oct 30 08:16:43 2007 (191) 200 OK
+Tue Oct 30 08:16:44 2007 (191) Total 135375 bytes sent.
+Tue Oct 30 08:16:44 2007 (191) Connection closed.
+Tue Oct 30 08:16:44 2007 (180) Total 135375 bytes sent.
+Tue Oct 30 08:16:44 2007 (180) Connection closed.
+Tue Oct 30 08:16:44 2007 (192) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:44 2007 (192) GET /water.mol2 HTTP/1.1
+Tue Oct 30 08:16:44 2007 (192) 200 OK
+Tue Oct 30 08:16:44 2007 (193) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:44 2007 (192) Total 798 bytes sent.
+Tue Oct 30 08:16:44 2007 (192) Connection closed.
+Tue Oct 30 08:16:44 2007 (193) GET /JmolApplet0_ReadersMore.jar HTTP/1.1
+Tue Oct 30 08:16:44 2007 (193) 200 OK
+Tue Oct 30 08:16:44 2007 (194) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:44 2007 (193) Total 61830 bytes sent.
+Tue Oct 30 08:16:44 2007 (193) Connection closed.
+Tue Oct 30 08:16:44 2007 (194) GET /JmolApplet0_ReadersMore.jar HTTP/1.1
+Tue Oct 30 08:16:44 2007 (194) 200 OK
+Tue Oct 30 08:16:44 2007 (194) Total 61830 bytes sent.
+Tue Oct 30 08:16:44 2007 (194) Connection closed.
+Tue Oct 30 08:16:53 2007 (195) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:53 2007 (195) GET /pil.mol HTTP/1.1
+Tue Oct 30 08:16:53 2007 (195) 200 OK
+Tue Oct 30 08:16:53 2007 (195) Total 459 bytes sent.
+Tue Oct 30 08:16:53 2007 (195) Connection closed.
+Tue Oct 30 08:16:53 2007 (196) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:53 2007 (196) GET /JmolApplet0_ReadersMolXyz.jar HTTP/1.1
+Tue Oct 30 08:16:53 2007 (196) 200 OK
+Tue Oct 30 08:16:53 2007 (196) Total 4495 bytes sent.
+Tue Oct 30 08:16:53 2007 (196) Connection closed.
+Tue Oct 30 08:16:53 2007 (197) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:53 2007 (197) GET /JmolApplet0_ReadersMolXyz.jar HTTP/1.1
+Tue Oct 30 08:16:53 2007 (197) 200 OK
+Tue Oct 30 08:16:53 2007 (197) Total 4495 bytes sent.
+Tue Oct 30 08:16:53 2007 (197) Connection closed.
+Tue Oct 30 08:16:59 2007 (198) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:16:59 2007 (198) GET /2HYY.mol2 HTTP/1.1
+Tue Oct 30 08:16:59 2007 (198) 200 OK
+Tue Oct 30 08:16:59 2007 (198) Total 435476 bytes sent.
+Tue Oct 30 08:16:59 2007 (198) Connection closed.
+Tue Oct 30 08:17:03 2007 (199) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:03 2007 (199) GET /JmolApplet0_ShapeSpecial.jar HTTP/1.1
+Tue Oct 30 08:17:03 2007 (199) 200 OK
+Tue Oct 30 08:17:03 2007 (200) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:03 2007 (199) Total 36619 bytes sent.
+Tue Oct 30 08:17:03 2007 (199) Connection closed.
+Tue Oct 30 08:17:03 2007 (200) GET /JmolApplet0_ShapeSpecial.jar HTTP/1.1
+Tue Oct 30 08:17:03 2007 (200) 200 OK
+Tue Oct 30 08:17:03 2007 (201) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:03 2007 (200) Total 36619 bytes sent.
+Tue Oct 30 08:17:03 2007 (200) Connection closed.
+Tue Oct 30 08:17:04 2007 (201) GET /JmolApplet0_Jvxl.jar HTTP/1.1
+Tue Oct 30 08:17:04 2007 (201) 200 OK
+Tue Oct 30 08:17:04 2007 (201) Total 73177 bytes sent.
+Tue Oct 30 08:17:04 2007 (201) Connection closed.
+Tue Oct 30 08:17:04 2007 (202) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:04 2007 (202) GET /JmolApplet0_Jvxl.jar HTTP/1.1
+Tue Oct 30 08:17:04 2007 (202) 200 OK
+Tue Oct 30 08:17:04 2007 (203) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:04 2007 (202) Total 73177 bytes sent.
+Tue Oct 30 08:17:04 2007 (202) Connection closed.
+Tue Oct 30 08:17:04 2007 (203) GET /2HYY.jvxl HTTP/1.1
+Tue Oct 30 08:17:04 2007 (203) 200 OK
+Tue Oct 30 08:17:04 2007 (203) Total 47459 bytes sent.
+Tue Oct 30 08:17:04 2007 (203) Connection closed.
+Tue Oct 30 08:17:09 2007 (204) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:09 2007 (204) GET /2HYY_R0.jvxl HTTP/1.1
+Tue Oct 30 08:17:09 2007 (204) 200 OK
+Tue Oct 30 08:17:09 2007 (204) Total 39139 bytes sent.
+Tue Oct 30 08:17:09 2007 (204) Connection closed.
+Tue Oct 30 08:17:09 2007 (205) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:09 2007 (205) GET /ATP.sdf HTTP/1.1
+Tue Oct 30 08:17:09 2007 (205) 200 OK
+Tue Oct 30 08:17:09 2007 (205) Total 4480 bytes sent.
+Tue Oct 30 08:17:09 2007 (205) Connection closed.
+Tue Oct 30 08:17:09 2007 (206) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:09 2007 (206) GET /R0.sdf HTTP/1.1
+Tue Oct 30 08:17:09 2007 (206) 200 OK
+Tue Oct 30 08:17:09 2007 (206) Total 10859 bytes sent.
+Tue Oct 30 08:17:09 2007 (206) Connection closed.
+Tue Oct 30 08:17:10 2007 (173) Timeout while waiting for request.
+Tue Oct 30 08:17:10 2007 (173) Total 83243 bytes sent.
+Tue Oct 30 08:17:10 2007 (173) Connection closed.
+Tue Oct 30 08:17:10 2007 (175) Timeout while waiting for request.
+Tue Oct 30 08:17:10 2007 (175) Total 70454 bytes sent.
+Tue Oct 30 08:17:10 2007 (175) Connection closed.
+Tue Oct 30 08:17:12 2007 (207) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:17:12 2007 (207) GET /arrow_5.gif HTTP/1.1
+Tue Oct 30 08:17:12 2007 (207) 200 OK
+Tue Oct 30 08:17:12 2007 (207) Reusing connection...
+Tue Oct 30 08:17:13 2007 (207) GET /arrow_3.gif HTTP/1.1
+Tue Oct 30 08:17:13 2007 (207) 200 OK
+Tue Oct 30 08:17:13 2007 (207) Reusing connection...
+Tue Oct 30 08:17:44 2007 (207) Timeout while waiting for request.
+Tue Oct 30 08:17:44 2007 (207) Total 1939 bytes sent.
+Tue Oct 30 08:17:44 2007 (207) Connection closed.
+Tue Oct 30 08:18:30 2007 (208) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:18:30 2007 (208) GET /JmolApplet0.jar HTTP/1.1
+Tue Oct 30 08:18:30 2007 (208) 200 OK
+Tue Oct 30 08:18:30 2007 (208) Total 11327 bytes sent.
+Tue Oct 30 08:18:30 2007 (208) Connection closed.
+Tue Oct 30 08:18:30 2007 (209) Connect from localhost (127.0.0.1)
+Tue Oct 30 08:18:30 2007 (209) GET /water.mol2 HTTP/1.1
+Tue Oct 30 08:18:30 2007 (209) 200 OK
+Tue Oct 30 08:18:30 2007 (209) Total 798 bytes sent.
+Tue Oct 30 08:18:30 2007 (209) Connection closed.

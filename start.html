@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html>
+<head>  
+  <link rel='stylesheet' type='text/css' href='index.css' /> 
+  <script src='Jmol2.js'  type='text/javascript'></script>    
+  <script src='index.js' type='text/javascript'></script>    
+  <script src='questions.js' type='text/javascript'></script>
+  <script type='text/javascript'>
+    <!--
+    document.write("<title>" + Page_Title + "</title>");   
+    -->
+  </script>
+</head>
+<body onload='ShowPage(0); //ReadFile();'>  
+    <div class='div_layout'>
+      <div class='td_logo'>
+        <img src="sp_logo.gif" />
+      </div>
+      <div class='td_meter' id='td_meter'>
+        <img class="img_meter" src="bg.gif" />
+      </div>
+      <div class='td_pointer' id='td_pointer'>
+        <img class="img_pointer" id="img_pointer" src="arrow_0.gif" /> 
+      </div>
+      <div class='td_head'>
+        <!-- Sleutel - Slot -->
+      </div>
+      <div class='td_jmol'>
+        <script type='text/javascript'>
+          <!--          
+            jmolInitialize("./", window.location.protocol == "file:");
+            jmolSetCallback("language", "nl");
+            jmolSetDocument(0); // Don't print directly when Jmol.js function is called
+            if(def(Pages[0].PreScr)) InitScript += "; " + Pages[0].PreScr;
+            document.write(jmolApplet([600,600], InitScript, "main")._code);
+            // dummy = _jmolGetApplet("main");
+            //document.write(jmolButton("console", "start console", "main", "tool tipje"));
+          -->
+        </script>
+      <!-- <input type="button" value="goto" name="Button" onclick="GotoPage(Goto_PageID);"/>
+      
+      <input type="button" value="rotate100" name="Button" onclick="ChangeMeter(3);"/>
+      <input type="button" value="rotate0" name="Button" onclick="ChangeMeter(12);"/>
+      -->
+      </div>
+      <div class='td_page'>
+        <div class='div_close'>
+          <img src='restart.gif' height='20px' width='20px' alt='restart' onclick='location.reload(true);' >
+          <img src='close.gif' height='25px' width='20px' alt='close' onclick='window.close();' >
+        </div>
+        <script type='text/javascript'>
+          <!--
+ //         var PageHeight = document.getElementById("table_main").style.height; 
+          document.write(PrintPages(Pages));   
+          -->
+        </script>
+      </div>
+      <div class='div_bottom'>
+        <img src="bottom.gif" />
+      </div>
+      <div class='div_copyright'>
+        &copy; Copyright 2008, Schering-Plough
+      </div>
+    </div>
+  <!-- <iframe id='ReadFrame' src='test.txt' style='height: 0px; visibility: hidden;' /> 
+  <object id='ReadFrame' data='test.txt' style='visibility: hidden;' /> -->
+</body>
+</html>
