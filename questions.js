@@ -86,7 +86,7 @@ Pages = [
         Help: 'Is deze holte groot genoeg om het gehele molecuul (geneesmiddel) in te passen? Voor meer toelichting en tips kijk eens bij de help van deze vraag.',
         ViewScr: 'draw arrow1 ARROW {-20.04795 4.29673 8.348911} WIDTH 0.3 {-12.060478 6.7303314 12.697704} 180; color draw blue; moveto 2 {-562 805 191 119.57} ',
         Choice: 'Fout, deze holte is te klein en niet diep genoeg om een een molecuul (geneesmiddel) in te passen.',
-        ChoiceScr: 'draw arrow1 ARROW {-20.04795 4.29673 8.348911} WIDTH 0.3 {-12.060478 6.7303314 12.697704} 180; color draw red; moveto 2 {-562 805 191 119.57}',
+        ChoiceScr: 'draw arrow1 ARROW {-20.04795 4.29673 8.348911} WIDTH 0.3 {-12.060478 6.7303314 12.697704} 180; color draw green; moveto 2 {-562 805 191 119.57}',
         Right: 0
       },
       {
@@ -95,14 +95,14 @@ Pages = [
         Help: 'Kijk eens bij de help van de vraag. In het lijstje staan de belangrijkste eigenschappen van een holte. Voldoet de holte aan deze voorwaarden?',
         ViewScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw blue; moveto 2 { 417 -846 -332 120.6}',
         Choice: 'Goed! Dit is inderdaad een holte (sleutelgat) waar perfect een geneesmiddel in kan passen. Hij is niet te breed of te smal en diep genoeg. Ga verder naar de volgende vraag.',
-        ChoiceScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw green; moveto 2 { 417 -846 -332 120.6}',
+        ChoiceScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw red; moveto 2 { 417 -846 -332 120.6}',
         Right: 1
       }
     ],
     Note: 'Als je de goede holte hebt gevonden kun je verder naar de volgende vraag.',
     Stereo: 1,
     Meter: null,
-    PreScr: 'spacefill off; wireframe off; load 2HYY.mol2; spacefill off; wireframe off; moveto 0 1 1 1 -180 -60 -60 -60; wireframe 38; moveto 4 0 0 0 0 100; delay 0.000001; isoSurface Iso_Full model 1.2 FILE "2HYY.jvxl"; isoSurface Iso_Full translucent 1.00 ',
+    PreScr: 'spacefill off; wireframe off; load 2HYY.mol2; spacefill off; wireframe off; moveto 0 1 1 1 -180 -60 -60 -60; wireframe 38; moveto 4 0 0 0 0 100; delay 0.000001; isoSurface "2HYY.jvxl"; isoSurface $Iso_Full translucent 1.00 ',
     ViewScr: 'isosurface $Iso_Full translucent 0.00; wireframe off;',
     PostScr: 'draw off; isoSurface $Iso_Full translucent 0.00; hide 0; spin off'
   },
