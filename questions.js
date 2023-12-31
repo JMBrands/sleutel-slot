@@ -95,16 +95,16 @@ Pages = [
         Help: 'Kijk eens bij de help van de vraag. In het lijstje staan de belangrijkste eigenschappen van een holte. Voldoet de holte aan deze voorwaarden?',
         ViewScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw blue; moveto 2 { 417 -846 -332 120.6}',
         Choice: 'Goed! Dit is inderdaad een holte (sleutelgat) waar perfect een geneesmiddel in kan passen. Hij is niet te breed of te smal en diep genoeg. Ga verder naar de volgende vraag.',
-        ChoiceScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw red; moveto 2 { 417 -846 -332 120.6}',
+        ChoiceScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw green; moveto 2 { 417 -846 -332 120.6}',
         Right: 1
       }
     ],
     Note: 'Als je de goede holte hebt gevonden kun je verder naar de volgende vraag.',
     Stereo: 1,
     Meter: null,
-    PreScr: 'spacefill off; wireframe off; load 2HYY.mol2; spacefill off; wireframe off; moveto 0 1 1 1 -180 -60 -60 -60; wireframe 38; moveto 4 0 0 0 0 100; delay 0.000001; isoSurface "2HYY.jvxl"; isoSurface $Iso_Full translucent 1.00 ',
-    ViewScr: 'isosurface $Iso_Full translucent 0.00; wireframe off;',
-    PostScr: 'draw off; isoSurface $Iso_Full translucent 0.00; hide 0; spin off'
+    PreScr: 'spacefill off; wireframe off; load 2HYY.mol2; spacefill off; wireframe off; moveto 0 1 1 1 -180 -60 -60 -60; wireframe 38; moveto 4 0 0 0 0 100; delay 0.000001; isoSurface Iso_Full file "2HYY.jvxl" on',
+    ViewScr: 'isoSurface Iso_Full translucent 0.00; wireframe off;',
+    PostScr: 'draw off; isoSurface Iso_Full translucent 0.00; hide 0; spin off'
   },
   ////////// 5 - De natuurlijke sleutel \\\\\\\\\\
   {
