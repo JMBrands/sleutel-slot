@@ -257,7 +257,7 @@ Pages = [
     Note: null,
     Stereo: null,
     Meter: null,
-    PreScr: 'isoSurface Iso_Part model 1.2 "2HYY_R1.jvxl"; set backgroundmodel 1.2; frame 4.3; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface Iso_Full translucent @TransLucentVal; TransLucentVal = @TransLucentVal+0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full translucent 1.00; endif; moveto 2 {772 522 363 87.5} 370 -4.2 29.0; load append "R1B.sdf"; set backgroundmodel 1.2; frame 4.3; isoSurface Iso_Part_MEP model 1.2 "2HYY_R1_mep.jvxl"  translucent 1.0; isoSurface Iso_Full_MEP model 1.2 "2HYY_mep.jvxl" translucent 1.0;',
+    PreScr: 'isoSurface Iso_Part model 1.2 "2HYY_R1.jvxl"; set backgroundmodel 1.2; frame 4.3; isoSurface Iso_Full translucent 1.00; moveto 2 {772 522 363 87.5} 370 -4.2 29.0; load append "R1B.sdf"; set backgroundmodel 1.2; frame 4.3; isoSurface Iso_Part_MEP model 1.2 "2HYY_R1_mep.jvxl"  translucent 1.0; isoSurface Iso_Full_MEP model 1.2 "2HYY_mep.jvxl" translucent 1.0;',
     ViewScr: 'isosurface Iso_Part off; isosurface Iso_Part_MEP translucent 0.0; set backgroundmodel 1.2; ',
     PostScr: 'isosurface Iso_Part_MEP translucent 0.0; isosurface Iso_Part translucent 1.0; frame 5.3; display 5.3; moveto 2 {930 141 340 142} 100 0 0 ; isoSurface Iso_Full_MEP translucent 0.00; isosurface Iso_Part_MEP translucent 1.0; spin off'
   },
@@ -352,9 +352,9 @@ Pages = [
     Note: '',
     Stereo: 1,
     Meter: null,
-    PreScr: 'isoSurface Iso_Part_MEP model 1.2 "2HYY_R3_mep.jvxl"; set backgroundmodel 1.2; frame 6.1; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface Iso_Full_MEP translucent @TransLucentVal;  TransLucentVal = @TransLucentVal+0.1; delay 0.3; goto _loop1; else; isoSurface Iso_Full_MEP translucent 1.00; endif; moveto 2 {432 -247 868 159} 280 -1.2 34.2; load append "R3.sdf"; set backgroundmodel 1.2; frame 6.1;',
+    PreScr: 'isoSurface Iso_Part_MEP model 1.2 "2HYY_R3_mep.jvxl"; set backgroundmodel 1.2; frame 6.1; isoSurface Iso_Full_MEP translucent 1.00; moveto 2 {432 -247 868 159} 280 -1.2 34.2; load append "R3.sdf"; set backgroundmodel 1.2; frame 6.1;',
     ViewScr: null,
-    PostScr: 'frame 7.2; display 7.2; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full_MEP translucent 0.00; color Iso_Part_MEP translucent 1.00; endif; spin off'
+    PostScr: 'frame 7.2; display 7.2; moveto 2 {930 141 340 142} 100 0 0 ; isoSurface Iso_Full_MEP translucent 0.00; color Iso_Part_MEP translucent 1.00; spin off'
   },
   ////////// 11 - find the right position of the solubaliser \\\\\\\\\\
   { // FIXME
@@ -413,7 +413,7 @@ Pages = [
     Note: null,
     Stereo: 1,
     Meter: null,
-    PreScr: 'TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal+0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full_MEP translucent 1.00; endif; moveto 2 {794 498 -349 76.08} 320.44 8.0 12.83',
+    PreScr: 'isoSurface Iso_Full_MEP translucent 1.00; moveto 2 {794 498 -349 76.08} 320.44 8.0 12.83',
     ViewScr: 'color echo [x001E55];\
                echo "Je begon met het kiezen van de begin stof."; display 3.2; frame 3.2; select 3.2; wireframe 75; delay 4;\
                echo "Je zette er de eerste zijgroep aan."; display 4.3; frame 4.3; select 4.3; wireframe 75; delay 4;\
