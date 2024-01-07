@@ -211,7 +211,7 @@ Pages = [
     Meter: null,
     PreScr: 'load append "R1.sdf"; set backgroundmodel 1.2; display 3.2; frame 3.2;',
     ViewScr: null,
-    PostScr: 'frame 4.3; display 4.3; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface Iso_Full translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full translucent 0.00; endif; spin off'
+    PostScr: 'frame 4.3; display 4.3; moveto 2 {930 141 340 142} 100 0 0; isoSurface Iso_Full translucent 0.00; spin off'
   },
   ////////// 8 - set the right donors acceptors for the R1 group (R1B) \\\\\\\\\\
   { // FIXED
