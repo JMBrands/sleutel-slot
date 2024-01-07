@@ -107,7 +107,7 @@ Pages = [
     PostScr: 'draw off; isoSurface Iso_Full translucent 0.00; hide 0; spin off'
   },
   ////////// 5 - De natuurlijke sleutel \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TText,
     Head: 'De natuurlijke sleutel van dit eiwit',
     Text: 'In dit eiwit zit inderdaad een duidelijke holte (die je net hebt aangewezen) vergelijkbaar met een sleutelgat waar moleculen als sleutels inpassen. Deze holte zit er natuurlijk niet voor niets. Normaal bindt op deze plaats het molecuul ATP (natuurlijke sleutel) wat er voor zorgt dat het eiwit (slot) kan worden geaktiveerd. Wanneer een geneesmiddel in deze holte is gebonden kan de natuurlijke sleutel ATP niet meer binden en kan het eiwit dus niet meer aktief worden. Klik op view om de binding van ATP in de holte van dit eiwit te zien.',
@@ -115,12 +115,12 @@ Pages = [
     Note: null,
     Stereo: 1,
     Meter: null,
-    PreScr: 'moveto 2 {914 366 174 136.62} 221.28 0 22.8; delay 0.1; isoSurface Iso_Part model 1.2 "2HYY_R0.jvxl"; TransLucentVal = 0.00; load append "ATP.sdf"; frame *;  set backgroundmodel 1.2;',
-    ViewScr: 'isoSurface $Iso_Full translucent 1.00;',
-    PostScr: 'moveto 2 {914 366 174 136.62} 221.28 0 22.8; isoSurface $Iso_Full translucent 1.00 ; hide all; spin off'
+    PreScr: 'wireframe off; moveto 2 {914 366 174 136.62} 221.28 0 22.8; delay 0.1; isoSurface Iso_Part model 1.2 "2HYY_R0.jvxl"; TransLucentVal = 0.00; load append "ATP.sdf"; frame *;  set backgroundmodel 1.2;',
+    ViewScr: 'select */1; wireframe off; select *; isoSurface Iso_Full translucent 1.00;',
+    PostScr: 'moveto 2 {914 366 174 136.62} 221.28 0 22.8; isoSurface Iso_Full translucent 1.00 ; hide all; spin off'
   },
   ////////// 6 - find the starting scafold \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TQuestion,
     Head: 'De zoektocht naar een goede sleutel kan beginnen.',
     Text: 'De zoektocht naar een goede sleutel begint met het passen van heel veel sleutels op het slot. In praktijk worden veel moleculen (>20.000!) getest om te bepalen of ze in ieder geval een beetje binden in de holte van het eiwit. Het gevonden molecuul moet vervolgens nog verder worden ontwikkeld met als doel het geneesmiddel aktiever te maken (betere binding aan de holte van het eiwit) en mogelijke bijwerkingen te verminderen.<br />\
@@ -165,7 +165,7 @@ Pages = [
     PostScr: 'moveto 2 {914 366 174 136.62} 221.28 0 22.8;'
   },
   ////////// 7 - find the pocket R1 group \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TQuestion,
     Head: 'Stap 1 naar een verbeterde sleutel',
     Text: 'Hier zie je je gekozen startpunt in de holte van het eiwit. Dit molecuul bindt echter nog vrij zwak aan het eiwit. Om deze binding te versterken gaan we proberen de holte in het eiwit verder op te vullen zodat door middel van VanderWaals-interacties het molecuul sterker aan het eiwit bindt.<br />\
@@ -211,10 +211,10 @@ Pages = [
     Meter: null,
     PreScr: 'load append "R1.sdf"; set backgroundmodel 1.2; display 3.2; frame 3.2;',
     ViewScr: null,
-    PostScr: 'frame 4.3; display 4.3; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full translucent 0.00; endif; spin off'
+    PostScr: 'frame 4.3; display 4.3; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface Iso_Full translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full translucent 0.00; endif; spin off'
   },
   ////////// 8 - set the right donors acceptors for the R1 group (R1B) \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TQuestion,
     Head: 'Waterstofbruggen?', //O22/5.3 H32/5.3
     Text: 'Onderstaande verbindingen vullen de holte optimaal in, echter de binding van de verschillende moleculen aan het eiwit is duidelijk verschillend. De kleuren in de weergave van het eiwit geven waterstofbrugacceptoren in rood aan (- lading), en waterstofbrugdonoren (+ lading) in blauw weer. Druk op de view button om deze kleuren te zien, gebruik niet de 3D bril en 3D weergave. Welk molecuul zal het sterkst aan de receptor binden?',
@@ -257,12 +257,12 @@ Pages = [
     Note: null,
     Stereo: null,
     Meter: null,
-    PreScr: 'isoSurface Iso_Part model 1.2 "2HYY_R1.jvxl"; set backgroundmodel 1.2; frame 4.3; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface $Iso_Full translucent @TransLucentVal; TransLucentVal = @TransLucentVal+0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full translucent 1.00; endif; moveto 2 {772 522 363 87.5} 370 -4.2 29.0; load append "R1B.sdf"; set backgroundmodel 1.2; frame 4.3; isoSurface Iso_Part_MEP model 1.2 "2HYY_R1_mep.jvxl"  translucent 1.0; isoSurface Iso_Full_MEP model 1.2 "2HYY_mep.jvxl" translucent 1.0;',
-    ViewScr: 'color $Iso_Part_MEP translucent 1.00; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  color $Iso_Part translucent @TransLucentVal; TransLucentValMEP = 1.0-@TransLucentVal; color $Iso_Part_MEP translucent @TransLucentValMEP; TransLucentVal = @TransLucentVal+0.1; delay 0.3; goto _loop1; else; color $Iso_Part translucent 1.00; color $Iso_Part_MEP translucent 0.0; endif; set backgroundmodel 1.2; ',
-    PostScr: 'color $Iso_Part_MEP translucent 0.0; color $Iso_Part translucent 1.0; frame 5.3; display 5.3; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 0.00; color $Iso_Part_MEP translucent 1.0; endif; spin off'
+    PreScr: 'isoSurface Iso_Part model 1.2 "2HYY_R1.jvxl"; set backgroundmodel 1.2; frame 4.3; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface Iso_Full translucent @TransLucentVal; TransLucentVal = @TransLucentVal+0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full translucent 1.00; endif; moveto 2 {772 522 363 87.5} 370 -4.2 29.0; load append "R1B.sdf"; set backgroundmodel 1.2; frame 4.3; isoSurface Iso_Part_MEP model 1.2 "2HYY_R1_mep.jvxl"  translucent 1.0; isoSurface Iso_Full_MEP model 1.2 "2HYY_mep.jvxl" translucent 1.0;',
+    ViewScr: 'isosurface Iso_Part off; isosurface Iso_Part_MEP translucent 0.0; set backgroundmodel 1.2; ',
+    PostScr: 'isosurface Iso_Part_MEP translucent 0.0; isosurface Iso_Part translucent 1.0; frame 5.3; display 5.3; moveto 2 {930 141 340 142} 100 0 0 ; isoSurface Iso_Full_MEP translucent 0.00; isosurface Iso_Part_MEP translucent 1.0; spin off'
   },
   ////////// 9 - find the right R2 group \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TQuestion,
     Head: 'Stap 2 naar een verbeterde sleutel',
     Text: 'Als je kijkt naar het molecuul dat je nu hebt opgebouwd in de receptor, zie je dat er nog een ruimte in de holte niet wordt opgevuld. Deze holte kan worden benut om het molecuul, onze sleutel, een stap verder te verbeteren. Welke groep van de antwoorden hieronder zou je aanbrengen op het molecuul om de binding aan het eiwit verder te versterken?',
@@ -300,9 +300,9 @@ Pages = [
     Note: null,
     Stereo: null,
     Meter: null,
-    PreScr: 'isoSurface Iso_Part_MEP model 1.2 "2HYY_R2_mep.jvxl"0; set backgroundmodel 1.2; frame 5.3; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal+0.1; delay 0.3; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 1.00; endif; moveto 2 { -965 214 -148 138.2} 275 -11.5 18.9;  load append "R2.sdf"; set backgroundmodel 1.2; frame 5.3;',
+    PreScr: 'isoSurface Iso_Part_MEP model 1.2 "2HYY_R2_mep.jvxl"; set backgroundmodel 1.2; frame 5.3; isosurface Iso_Full_MEP translucent 1.0; moveto 2 { -965 214 -148 138.2} 275 -11.5 18.9;  load append "R2.sdf"; set backgroundmodel 1.2; frame 5.3;',
     ViewScr: null,
-    PostScr: 'frame 6.1; display 6.1; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 0.00; endif;'
+    PostScr: 'frame 6.1; display 6.1; moveto 2 {930 141 340 142} 100 0 0 ; isosurface Iso_Full_MEP translucent 0.0'
   },
   ////////// 10 - find the right position of the Me R3 \\\\\\\\\\
   { // FIXME
@@ -352,9 +352,9 @@ Pages = [
     Note: '',
     Stereo: 1,
     Meter: null,
-    PreScr: 'isoSurface Iso_Part_MEP model 1.2 "2HYY_R3_mep.jvxl"; set backgroundmodel 1.2; frame 6.1; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface $Iso_Full_MEP translucent @TransLucentVal;  TransLucentVal = @TransLucentVal+0.1; delay 0.3; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 1.00; endif; moveto 2 {432 -247 868 159} 280 -1.2 34.2; load append "R3.sdf"; set backgroundmodel 1.2; frame 6.1;',
+    PreScr: 'isoSurface Iso_Part_MEP model 1.2 "2HYY_R3_mep.jvxl"; set backgroundmodel 1.2; frame 6.1; TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface Iso_Full_MEP translucent @TransLucentVal;  TransLucentVal = @TransLucentVal+0.1; delay 0.3; goto _loop1; else; isoSurface Iso_Full_MEP translucent 1.00; endif; moveto 2 {432 -247 868 159} 280 -1.2 34.2; load append "R3.sdf"; set backgroundmodel 1.2; frame 6.1;',
     ViewScr: null,
-    PostScr: 'frame 7.2; display 7.2; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 0.00; color $Iso_Part_MEP translucent 1.00; endif; spin off'
+    PostScr: 'frame 7.2; display 7.2; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full_MEP translucent 0.00; color Iso_Part_MEP translucent 1.00; endif; spin off'
   },
   ////////// 11 - find the right position of the solubaliser \\\\\\\\\\
   { // FIXME
@@ -405,15 +405,15 @@ Pages = [
     PostScr: 'frame 8.1; display 8.1; spin off'
   },
   ////////// 12 - Glivec \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TText,
     Head: 'Glivec',
-    Text: 'Het molecuul wat je hebt gemaakt is de aktsieve stof in een echt bestaand geneesmiddel. Het molecuul heet Imatinib en bindt sterk aan het eiwit. Hierdoor kan ATP niet meer aan dit eiwit binden en kan dit eiwit niet meer geaktiveerd worden. De ongeremde celdeling wordt hierdoor gestopt. Sinds 2001 is dit molecuul onder de naam Glivec (Gleevec) beschikbaar voor de behandeling van leukemie. Novartis heeft dit middel ontwikkeld, en sindsdien zien er wereldwijd al vele patienten mee behandeld.',
+    Text: 'Het molecuul wat je hebt gemaakt is de actieve stof in een echt bestaand geneesmiddel. Het molecuul heet Imatinib en bindt sterk aan het eiwit. Hierdoor kan ATP niet meer aan dit eiwit binden en kan dit eiwit niet meer geactiveerd worden. De ongeremde celdeling wordt hierdoor gestopt. Sinds 2001 is dit molecuul onder de naam Glivec (Gleevec) beschikbaar voor de behandeling van leukemie. Novartis heeft dit middel ontwikkeld, en sindsdien zien er wereldwijd al vele patienten mee behandeld.',
     Help: null,
     Note: null,
     Stereo: 1,
     Meter: null,
-    PreScr: 'TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal+0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 1.00; endif; moveto 2 {794 498 -349 76.08} 320.44 8.0 12.83',
+    PreScr: 'TransLucentVal = 0.00; message _loop1; if ( @TransLucentVal < 1);  isoSurface Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal+0.1; delay 0.2; goto _loop1; else; isoSurface Iso_Full_MEP translucent 1.00; endif; moveto 2 {794 498 -349 76.08} 320.44 8.0 12.83',
     ViewScr: 'color echo [x001E55];\
                echo "Je begon met het kiezen van de begin stof."; display 3.2; frame 3.2; select 3.2; wireframe 75; delay 4;\
                echo "Je zette er de eerste zijgroep aan."; display 4.3; frame 4.3; select 4.3; wireframe 75; delay 4;\
@@ -425,7 +425,7 @@ Pages = [
     PostScr: 'color echo red'
   },
   ////////// 13 - eindpagina \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TText,
     Head: 'De Sleutel en het Slot.',
     Text: 'Dit was de door NV Organon ontwikkelde module om jullie te laten zien hoe geneesmiddelen-onderzoekers te werk gaan om stoffen te bedenken die mogelijk goede geneesmiddelen zouden kunnen zijn. Er is nog wel wat voor nodig om van een goed startpunt molecuul een goed geneesmiddel te maken. Stapsgewijs worden er verschillende groepen aan een molecuul gezet en wordt bepaald of het gemaakte molecuul nog steeds goed bindt aan het eiwit. Tijdens deze optimalisatie worden wel 500 tot 1000 moleculen bedacht en gemaakt. Hiervoor is veel kennis van de scheikunde en de biologie nodig, zoals jullie hebben kunnen zien!',
@@ -457,5 +457,16 @@ Goto_PageID = 10;
 - isosurface molecular map mep
 - write isosurface "outputfilename.jvxl"
 om te openen:
-  iosurface "outputfilename.jvxl"
+  isosurface "outputfilename.jvxl"
+
+om te updaten naar jmol 16 (ben ik ~15 uur mee bezig geweest om hier achter te komen door de documentatie door te spitten, 
+                            daarvoor nog ~5 uur bezig geweest met uitvinden wat er mis was):
+- open oude jvxl in jmol 11
+- zoek drie atomen aan het vlakke oppervlakte van de isosurface uit en neem de nummers van die atomen, nu x, y, en z genoemd
+- gebruik isosurface new select(within((-)1000, PLANE, (atomno=x) (atomno=y) (atomno=z))) ignore(not within((-)1000, PLANE, (atomno=x) (atomno=y) (atomno=z))) molecular map mep
+    (de min is niet altijd aanwezig, soms krijg je ongeveer het omgekeerde van het origineel, dan moet je de - weghalen als je die had of andersom)
+- kijk of de isosurfaces overeenkomen
+- open jmol 16
+- gebruik isosurface new select(within((-)1000, PLANE, (atomno=x) (atomno=y) (atomno=z))) ignore(not within((-)1000, PLANE, (atomno=x) (atomno=y) (atomno=z))) molecular map mep opnieuw
+- write isosurface "outpufilename.jvxl"
 \*****************************************************************/
