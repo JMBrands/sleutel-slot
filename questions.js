@@ -61,7 +61,7 @@ Pages = [
     PostScr: 'moveto 2 1 1 1 180 -100 100 -100; zap'
   },
   ////////// 4 - find the pocket \\\\\\\\\\
-  {
+  { // FIXED
     Type: TQuestion,
     Head: 'Vind het sleutelgat in het slot',
     Text: 'De ontwikkeling van een nieuw geneesmiddel start met het uitvinden van welk eiwit (slot) ontregeld is geraakt waardoor de ziekte wordt veroorzaakt. Bij een vorm van leukemie is een eiwit, wat hiernaast in stokjesmodel staan, door een defect continu aktief geworden.<br />\
@@ -102,12 +102,12 @@ Pages = [
     Note: 'Als je de goede holte hebt gevonden kun je verder naar de volgende vraag.',
     Stereo: 1,
     Meter: null,
-    PreScr: 'spacefill off; wireframe off; load 2HYY.mol2; spacefill off; wireframe off; moveto 0 1 1 1 -180 -60 -60 -60; wireframe 38; moveto 4 0 0 0 0 100; delay 0.000001; isoSurface Iso_Full file "2HYY.jvxl" on',
+    PreScr: 'spacefill off; wireframe off; load 2HYY.mol2; spacefill off; wireframe off; moveto 0 1 1 1 -180 -60 -60 -60; wireframe 38; moveto 4 0 0 0 0 100; delay 0.000001; isoSurface Iso_Full file "2HYY.jvxl"; isoSurface Iso_Full translucent 1.00',
     ViewScr: 'isoSurface Iso_Full translucent 0.00; wireframe off;',
     PostScr: 'draw off; isoSurface Iso_Full translucent 0.00; hide 0; spin off'
   },
   ////////// 5 - De natuurlijke sleutel \\\\\\\\\\
-  {
+  { // FIXME
     Type: TText,
     Head: 'De natuurlijke sleutel van dit eiwit',
     Text: 'In dit eiwit zit inderdaad een duidelijke holte (die je net hebt aangewezen) vergelijkbaar met een sleutelgat waar moleculen als sleutels inpassen. Deze holte zit er natuurlijk niet voor niets. Normaal bindt op deze plaats het molecuul ATP (natuurlijke sleutel) wat er voor zorgt dat het eiwit (slot) kan worden geaktiveerd. Wanneer een geneesmiddel in deze holte is gebonden kan de natuurlijke sleutel ATP niet meer binden en kan het eiwit dus niet meer aktief worden. Klik op view om de binding van ATP in de holte van dit eiwit te zien.',
@@ -120,7 +120,7 @@ Pages = [
     PostScr: 'moveto 2 {914 366 174 136.62} 221.28 0 22.8; isoSurface $Iso_Full translucent 1.00 ; hide all; spin off'
   },
   ////////// 6 - find the starting scafold \\\\\\\\\\
-  {
+  { // FIXME
     Type: TQuestion,
     Head: 'De zoektocht naar een goede sleutel kan beginnen.',
     Text: 'De zoektocht naar een goede sleutel begint met het passen van heel veel sleutels op het slot. In praktijk worden veel moleculen (>20.000!) getest om te bepalen of ze in ieder geval een beetje binden in de holte van het eiwit. Het gevonden molecuul moet vervolgens nog verder worden ontwikkeld met als doel het geneesmiddel aktiever te maken (betere binding aan de holte van het eiwit) en mogelijke bijwerkingen te verminderen.<br />\
@@ -165,7 +165,7 @@ Pages = [
     PostScr: 'moveto 2 {914 366 174 136.62} 221.28 0 22.8;'
   },
   ////////// 7 - find the pocket R1 group \\\\\\\\\\
-  {
+  { // FIXME
     Type: TQuestion,
     Head: 'Stap 1 naar een verbeterde sleutel',
     Text: 'Hier zie je je gekozen startpunt in de holte van het eiwit. Dit molecuul bindt echter nog vrij zwak aan het eiwit. Om deze binding te versterken gaan we proberen de holte in het eiwit verder op te vullen zodat door middel van VanderWaals-interacties het molecuul sterker aan het eiwit bindt.<br />\
@@ -214,7 +214,7 @@ Pages = [
     PostScr: 'frame 4.3; display 4.3; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full translucent 0.00; endif; spin off'
   },
   ////////// 8 - set the right donors acceptors for the R1 group (R1B) \\\\\\\\\\
-  {
+  { // FIXME
     Type: TQuestion,
     Head: 'Waterstofbruggen?', //O22/5.3 H32/5.3
     Text: 'Onderstaande verbindingen vullen de holte optimaal in, echter de binding van de verschillende moleculen aan het eiwit is duidelijk verschillend. De kleuren in de weergave van het eiwit geven waterstofbrugacceptoren in rood aan (- lading), en waterstofbrugdonoren (+ lading) in blauw weer. Druk op de view button om deze kleuren te zien, gebruik niet de 3D bril en 3D weergave. Welk molecuul zal het sterkst aan de receptor binden?',
@@ -262,7 +262,7 @@ Pages = [
     PostScr: 'color $Iso_Part_MEP translucent 0.0; color $Iso_Part translucent 1.0; frame 5.3; display 5.3; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 0.00; color $Iso_Part_MEP translucent 1.0; endif; spin off'
   },
   ////////// 9 - find the right R2 group \\\\\\\\\\
-  {
+  { // FIXME
     Type: TQuestion,
     Head: 'Stap 2 naar een verbeterde sleutel',
     Text: 'Als je kijkt naar het molecuul dat je nu hebt opgebouwd in de receptor, zie je dat er nog een ruimte in de holte niet wordt opgevuld. Deze holte kan worden benut om het molecuul, onze sleutel, een stap verder te verbeteren. Welke groep van de antwoorden hieronder zou je aanbrengen op het molecuul om de binding aan het eiwit verder te versterken?',
@@ -305,7 +305,7 @@ Pages = [
     PostScr: 'frame 6.1; display 6.1; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 0.00; endif;'
   },
   ////////// 10 - find the right position of the Me R3 \\\\\\\\\\
-  {
+  { // FIXME
     Type: TQuestion,
     Head: 'Een magische methyl?',
     Text: 'Tot nu toe heb je behoorlijk grote groepen aan het molecuul gehangen om de holte in het eiwit zo goed mogelijk op te vullen. Echter, veelal is de binding tussen de sleutel en het slot (het molecuul en het eiwit) heel subtiel bepaald, denk hierbij maar eens aan de verschillen tussen echte sleutels. Ook kleine groepen aan het molecuul kunnen een dramatisch effect hebben op de binding van het molecuul aan het eiwit. <br />\
@@ -357,7 +357,7 @@ Pages = [
     PostScr: 'frame 7.2; display 7.2; moveto 2 {930 141 340 142} 100 0 0 ; TransLucentVal = 1.00; message _loop1; if ( @TransLucentVal > 0);  isoSurface $Iso_Full_MEP translucent @TransLucentVal; TransLucentVal = @TransLucentVal-0.1; delay 0.2; goto _loop1; else; isoSurface $Iso_Full_MEP translucent 0.00; color $Iso_Part_MEP translucent 1.00; endif; spin off'
   },
   ////////// 11 - find the right position of the solubaliser \\\\\\\\\\
-  {
+  { // FIXME
     Type: TQuestion,
     Head: 'Wat maakt een goed passende sleutel tot een goed geneesmiddel?',
     Text: 'We hebben nu een molecuul dat een zeer sterke binding aan de receptor heeft. De sleutel past perfect op het slot! Maar er zijn nog meer belangrijke voorwaarden.<br />\
@@ -405,7 +405,7 @@ Pages = [
     PostScr: 'frame 8.1; display 8.1; spin off'
   },
   ////////// 12 - Glivec \\\\\\\\\\
-  {
+  { // FIXME
     Type: TText,
     Head: 'Glivec',
     Text: 'Het molecuul wat je hebt gemaakt is de aktsieve stof in een echt bestaand geneesmiddel. Het molecuul heet Imatinib en bindt sterk aan het eiwit. Hierdoor kan ATP niet meer aan dit eiwit binden en kan dit eiwit niet meer geaktiveerd worden. De ongeremde celdeling wordt hierdoor gestopt. Sinds 2001 is dit molecuul onder de naam Glivec (Gleevec) beschikbaar voor de behandeling van leukemie. Novartis heeft dit middel ontwikkeld, en sindsdien zien er wereldwijd al vele patienten mee behandeld.',
@@ -425,7 +425,7 @@ Pages = [
     PostScr: 'color echo red'
   },
   ////////// 13 - eindpagina \\\\\\\\\\
-  {
+  { // FIXME
     Type: TText,
     Head: 'De Sleutel en het Slot.',
     Text: 'Dit was de door NV Organon ontwikkelde module om jullie te laten zien hoe geneesmiddelen-onderzoekers te werk gaan om stoffen te bedenken die mogelijk goede geneesmiddelen zouden kunnen zijn. Er is nog wel wat voor nodig om van een goed startpunt molecuul een goed geneesmiddel te maken. Stapsgewijs worden er verschillende groepen aan een molecuul gezet en wordt bepaald of het gemaakte molecuul nog steeds goed bindt aan het eiwit. Tijdens deze optimalisatie worden wel 500 tot 1000 moleculen bedacht en gemaakt. Hiervoor is veel kennis van de scheikunde en de biologie nodig, zoals jullie hebben kunnen zien!',
