@@ -75,27 +75,27 @@ Pages = [
         Answer: 'Holte 1',
         Meter: null,
         Help: 'Is deze holte groot genoeg om een molecuul (geneesmiddel) in te passen, en is de holte ook toegankelijk voor moleculen (ingang groot genoeg)? Voor meer toelichting en tips kijk eens bij de help van deze vraag.',
-        ViewScr: 'draw arrow1 ARROW {-6.9648438 -11.069992 18.9561} WIDTH 0.3 {-2.6592789 -5.0055885 17.103634} 180; color draw blue; moveto 2 {-834 552 -11 77.32} ',
+        ViewScr: 'draw arrow1 ARROW {-6.9648438 -11.069992 18.9561} WIDTH 0.35 {-2.6592789 -5.0055885 17.103634} 180; color draw blue; moveto 2 {-834 552 -11 77.32} ',
         Choice: 'Fout, maar je zit al in de goede richting. als je goed kijkt kun je zelfs helemaal door het sleutelgat heen kijken. Dit sleutelgat heeft 2 ingangen, kijk eens naar de andere ingang, zou deze niet beter toegankelijk zijn? Kijk met de view knop achter de andere antwoorden of daar geen betere optie bij zit.',
-      ChoiceScr: 'draw arrow1 ARROW {-6.9648438 -11.069992 18.9561} WIDTH 0.3 {-2.6592789 -5.0055885 17.103634} 180; color draw red; moveto 2 {-834 552 -11 77.32}',
+      ChoiceScr: 'draw arrow1 ARROW {-6.9648438 -11.069992 18.9561} WIDTH 0.35 {-2.6592789 -5.0055885 17.103634} 180; color draw red; moveto 2 {-834 552 -11 77.32}',
         Right: 0
       },
       {
         Answer: 'Holte 2',
         Meter: null,
         Help: 'Is deze holte groot genoeg om het gehele molecuul (geneesmiddel) in te passen? Voor meer toelichting en tips kijk eens bij de help van deze vraag.',
-        ViewScr: 'draw arrow1 ARROW {-20.04795 4.29673 8.348911} WIDTH 0.3 {-12.060478 6.7303314 12.697704} 180; color draw blue; moveto 2 {-562 805 191 119.57} ',
+        ViewScr: 'draw arrow1 ARROW {-20.04795 4.29673 8.348911} WIDTH 0.35 {-12.060478 6.7303314 12.697704} 180; color draw blue; moveto 2 {-562 805 191 119.57} ',
         Choice: 'Fout, deze holte is te klein en niet diep genoeg om een een molecuul (geneesmiddel) in te passen.',
-        ChoiceScr: 'draw arrow1 ARROW {-20.04795 4.29673 8.348911} WIDTH 0.3 {-12.060478 6.7303314 12.697704} 180; color draw green; moveto 2 {-562 805 191 119.57}',
+        ChoiceScr: 'draw arrow1 ARROW {-20.04795 4.29673 8.348911} WIDTH 0.35 {-12.060478 6.7303314 12.697704} 180; color draw red; moveto 2 {-562 805 191 119.57}',
         Right: 0
       },
       {
         Answer: 'Holte 3',
         Meter: null,
         Help: 'Kijk eens bij de help van de vraag. In het lijstje staan de belangrijkste eigenschappen van een holte. Voldoet de holte aan deze voorwaarden?',
-        ViewScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw blue; moveto 2 { 417 -846 -332 120.6}',
+        ViewScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.35 {11.053665 17.003113 8.492386} 180; color draw blue; moveto 2 { 417 -846 -332 120.6}',
         Choice: 'Goed! Dit is inderdaad een holte (sleutelgat) waar perfect een geneesmiddel in kan passen. Hij is niet te breed of te smal en diep genoeg. Ga verder naar de volgende vraag.',
-        ChoiceScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.3 {11.053665 17.003113 8.492386} 180; color draw green; moveto 2 { 417 -846 -332 120.6}',
+        ChoiceScr: 'draw arrow1 ARROW {14.661102 22.844818 6.3012085} WIDTH 0.35 {11.053665 17.003113 8.492386} 180; color draw green; moveto 2 { 417 -846 -332 120.6}',
         Right: 1
       }
     ],
@@ -305,7 +305,7 @@ Pages = [
     PostScr: 'frame 6.1; display 6.1; moveto 2 {930 141 340 142} 100 0 0 ; isosurface Iso_Full_MEP translucent 0.0'
   },
   ////////// 10 - find the right position of the Me R3 \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TQuestion,
     Head: 'Een magische methyl?',
     Text: 'Tot nu toe heb je behoorlijk grote groepen aan het molecuul gehangen om de holte in het eiwit zo goed mogelijk op te vullen. Echter, veelal is de binding tussen de sleutel en het slot (het molecuul en het eiwit) heel subtiel bepaald, denk hierbij maar eens aan de verschillen tussen echte sleutels. Ook kleine groepen aan het molecuul kunnen een dramatisch effect hebben op de binding van het molecuul aan het eiwit. <br />\
@@ -354,10 +354,10 @@ Pages = [
     Meter: null,
     PreScr: 'isoSurface Iso_Part_MEP model 1.2 "2HYY_R3_mep.jvxl"; set backgroundmodel 1.2; frame 6.1; isoSurface Iso_Full_MEP translucent 1.00; moveto 2 {432 -247 868 159} 280 -1.2 34.2; load append "R3.sdf"; set backgroundmodel 1.2; frame 6.1;',
     ViewScr: null,
-    PostScr: 'frame 7.2; display 7.2; moveto 2 {930 141 340 142} 100 0 0 ; isoSurface Iso_Full_MEP translucent 0.00; color Iso_Part_MEP translucent 1.00; spin off'
+    PostScr: 'frame 7.2; display 7.2; moveto 2 {930 141 340 142} 100 0 0 ; isoSurface Iso_Full_MEP translucent 0.00; isosurface Iso_Part_MEP translucent 1.00; spin off'
   },
   ////////// 11 - find the right position of the solubaliser \\\\\\\\\\
-  { // FIXME
+  { // FIXED
     Type: TQuestion,
     Head: 'Wat maakt een goed passende sleutel tot een goed geneesmiddel?',
     Text: 'We hebben nu een molecuul dat een zeer sterke binding aan de receptor heeft. De sleutel past perfect op het slot! Maar er zijn nog meer belangrijke voorwaarden.<br />\
